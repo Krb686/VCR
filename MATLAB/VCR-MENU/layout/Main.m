@@ -22,7 +22,7 @@ function varargout = Main(varargin)
 
 % Edit the above text to modify the response to help guide_test
 
-% Last Modified by GUIDE v2.5 22-Nov-2014 15:36:06
+% Last Modified by GUIDE v2.5 11-Jul-2015 14:45:14
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -66,24 +66,20 @@ function varargout = guide_test_OutputFcn(hObject, eventdata, h)
 varargout{1} = h.output;
 
 
-% --- Executes on button press in trainButton.
-function trainButton_Callback(hObject, eventdata, h)
-%set(h.tuneButton, 'enable', 'off');
+% --- Executes on button press in trainingButton.
+function trainingButton_Callback(hObject, eventdata, h)
+%set(h.settingButton, 'enable', 'off');
 %set(h.activateButton, 'enable', 'off');
-Train_gui();
+training_gui();
 
-% --- Executes on button press in activateButton.
-function activateButton_Callback(hObject, eventdata, h)
-Activate_gui();
-
-% --- Executes on button press in tuneButton.
-function tuneButton_Callback(hObject, eventdata, h)
-tune_gui();
+% --- Executes on button press in settingButton.
+function settingButton_Callback(hObject, eventdata, h)
+settings_gui();
 
 
-% --- Executes on button press in testButton.
-function testButton_Callback(hObject, eventdata, handles)
-% hObject    handle to testButton (see GCBO)
+% --- Executes on button press in testingButton.
+function testingButton_Callback(hObject, eventdata, handles)
+% hObject    handle to testingButton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-Test_gui();
+testing_gui();

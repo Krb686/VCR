@@ -201,7 +201,7 @@ disp(' ')
 return;
 
 if (PLOT)
-    hObject = Train_gui;
+    hObject = training_gui;
     displayMatchResults(d1, d2, hObject);
 end
 %------------- END OF CODE --------------

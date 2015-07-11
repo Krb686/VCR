@@ -26,7 +26,7 @@ function newTraining(word_no)
 %------------- BEGIN CODE --------------
 %% Function Header
 global cmd_list Fs dur FEATURES speakerObject
-hObject = Train_gui();
+hObject = training_gui();
 
 %% Function Body
 speaker_no = speakerName_gui(word_no);
