@@ -1,0 +1,28 @@
+classdef Algorithm1 < handle
+   properties (Hidden)
+      AccountStatus = 'open'; 
+   end
+   % The following properties can be set only by class methods
+   properties (SetAccess = private)
+      
+   end
+   % Define an event called InsufficientFunds
+   events
+      analysisStart
+      analysisEnd
+   end
+   methods
+      function ALG = Algorithm1(name)
+         RF.name = Entries;
+      end
+      function addTimeSamplePoint(datapoint)
+         % xxx
+      end
+      function reportOutput(RF, address, data)
+         % xxx
+      end % 
+      function analyze(RF)
+         % xxx
+      end
+   end % methods
+end % classdef
